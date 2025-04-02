@@ -34,11 +34,11 @@
             <div class="nav-links">
                 <a href="/" class="nav-link" data-hr="Početna" data-en="Home">Početna</a>
                 <a href="/proizvodi-i-usluge.html" class="nav-link" data-hr="Proizvodi i usluge" data-en="Products and Services">Proizvodi i usluge</a>
-                <a href="/o-nama.html" class="nav-link" data-hr="O nama" data-en="About Us">O nama</a>
                 <a href="/web-shop.html" class="nav-link" data-hr="Web Shop" data-en="Web Shop">Web Shop</a>
                 <a href="/etsy-shop.html" class="nav-link" data-hr="Etsy Shop" data-en="Etsy Shop">Etsy Shop</a>
+                <a href="/o-nama.html" class="nav-link" data-hr="O nama" data-en="About Us">O nama</a>
             </div>
-            <div class="mobile-menu-btn">
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -233,5 +233,11 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+    function toggleMobileMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
 </body>
 </html> 

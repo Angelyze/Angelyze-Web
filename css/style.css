@@ -388,21 +388,20 @@ body::before {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-container {
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
-    .language-switcher {
+    .logo {
         order: 1;
-        right: auto;
-        margin-right: 10px;
     }
 
     .mobile-menu-btn {
         order: 2;
     }
 
-    .logo {
-        position: static;
+    .language-switcher {
+        order: 3;
+        margin-right: 20px;
     }
 
     .nav-links {

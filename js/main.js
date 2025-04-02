@@ -93,11 +93,14 @@ window.addEventListener('scroll', () => {
 });
 
 // Parallax Effect for Hero Section
+// Removing this effect to keep the hero background static
+/*
 const hero = document.querySelector('.hero');
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
 });
+*/
 
 // Add hover effect to service cards
 const serviceCards = document.querySelectorAll('.service-card');

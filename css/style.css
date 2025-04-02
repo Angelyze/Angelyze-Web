@@ -280,7 +280,7 @@ body::before {
     text-shadow: 2px 2px 40px rgb(255, 255, 255), 2px 2px 40px rgb(255, 255, 255);
     margin-top: 2rem;
     color: #b51c1f;
-    -webkit-text-stroke: 3px #000000;
+    -webkit-text-stroke: 2px #000000;
 }
 
 .hero-subtitle {
@@ -288,7 +288,6 @@ body::before {
     margin-bottom: 2rem;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1);
     color: #ffffff;
-    -webkit-text-stroke: 1px #000000;
 }
 
 .hero .cta-button {

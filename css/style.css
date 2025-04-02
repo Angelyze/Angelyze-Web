@@ -277,7 +277,7 @@ body::before {
 .hero-title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 1), 0 0 30px rgb(255, 255, 255);
+    text-shadow: 2px 2px 15px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
     margin-top: 2rem;
     color: #b51c1f;
 }

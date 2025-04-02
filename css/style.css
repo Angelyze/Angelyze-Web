@@ -277,14 +277,14 @@ body::before {
 .hero-title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.8);
     margin-top: 2rem;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .hero .cta-button {

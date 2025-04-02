@@ -388,7 +388,17 @@ body::before {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-container {
-        justify-content: space-between;
+        justify-content: flex-end;
+    }
+
+    .language-switcher {
+        order: 1;
+        right: auto;
+        margin-right: 10px;
+    }
+
+    .mobile-menu-btn {
+        order: 2;
     }
 
     .logo {
@@ -397,10 +407,6 @@ body::before {
 
     .nav-links {
         display: none;
-    }
-
-    .mobile-menu-btn {
-        display: flex;
     }
 
     .hero-title {
@@ -413,10 +419,6 @@ body::before {
 
     .services-grid {
         grid-template-columns: 1fr;
-    }
-
-    .language-switcher {
-        right: 20px;
     }
 }
 

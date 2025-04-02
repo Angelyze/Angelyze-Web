@@ -258,7 +258,7 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 90vh;
+    min-height: 95vh;
     padding: 2rem 0;
 }
 
@@ -280,6 +280,8 @@ body::before {
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 1);
     margin-top: 2rem;
     color: #0097b2;
+    -webkit-text-stroke: 1.5px var(--accent-color);
+    text-stroke: 1.5px var(--accent-color);
 }
 
 .hero-subtitle {
@@ -287,6 +289,8 @@ body::before {
     margin-bottom: 2rem;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1);
     color: #0097b2;
+    -webkit-text-stroke: 0.8px var(--accent-color);
+    text-stroke: 0.8px var(--accent-color);
 }
 
 .hero .cta-button {

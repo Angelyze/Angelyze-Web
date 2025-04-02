@@ -93,7 +93,7 @@ body::before {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 100px 1rem 1rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,16 +146,6 @@ body::before {
 
 .mobile-menu-btn {
     display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-}
-
-.mobile-menu-btn span {
-    width: 30px;
-    height: 2px;
-    background: var(--text-color);
-    transition: var(--transition);
 }
 
 /* Back to Top Button */
@@ -396,26 +386,36 @@ body::before {
     }
 
     .logo {
+        position: static;
         display: flex;
         align-items: center;
-        margin-right: 10px;
+        margin-right: auto;
     }
 
     .language-switcher {
+        position: static;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
     }
 
     .mobile-menu-btn {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-left: 10px;
+        margin-left: auto;
+        gap: 6px;
+        cursor: pointer;
     }
 
-    .navbar {
-        height: auto;
+    .mobile-menu-btn span {
+        width: 30px;
+        height: 2px;
+        background: var(--text-color);
+        transition: var(--transition);
     }
 
     .nav-links {
@@ -433,6 +433,7 @@ body::before {
         backdrop-filter: blur(10px);
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
         z-index: 99;
+        padding: 1rem;
     }
 
     .hero-title {

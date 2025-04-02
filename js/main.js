@@ -84,7 +84,7 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 50) {
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.8)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.5)';
     } else {
         navbar.style.boxShadow = 'none';
     }

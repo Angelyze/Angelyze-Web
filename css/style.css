@@ -21,7 +21,7 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     position: relative;
-    background: linear-gradient(-45deg, #ffffff, #f8f9fa, #f0f2f5, #e9ecef);
+    background: linear-gradient(-45deg, #ffffff, #f0f0f0, #fbfbfb, #fbfcd8);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
@@ -84,7 +84,7 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     z-index: 100;
     box-shadow: none;

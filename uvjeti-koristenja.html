@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKXRSJ36KE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DKXRSJ36KE');
+    </script>
 </head>
 <body>
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        <button class="lang-btn active" data-lang="hr">HR</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -25,11 +28,15 @@
             <div class="nav-links">
                 <a href="/" class="nav-link" data-hr="Početna" data-en="Home">Početna</a>
                 <a href="/proizvodi-i-usluge.html" class="nav-link" data-hr="Proizvodi i usluge" data-en="Products and Services">Proizvodi i usluge</a>
-                <a href="/o-nama.html" class="nav-link" data-hr="O nama" data-en="About Us">O nama</a>
                 <a href="/web-shop.html" class="nav-link" data-hr="Web Shop" data-en="Web Shop">Web Shop</a>
                 <a href="/etsy-shop.html" class="nav-link" data-hr="Etsy Shop" data-en="Etsy Shop">Etsy Shop</a>
+                <a href="/o-nama.html" class="nav-link" data-hr="O nama" data-en="About Us">O nama</a>
             </div>
-            <div class="mobile-menu-btn">
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="hr">HR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -81,7 +88,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="background-color: rgba(44, 62, 80, 0.9); backdrop-filter: blur(10px);">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">

@@ -54,9 +54,8 @@ body::before {
 /* Language Switcher */
 .language-switcher {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+    right: 1rem;
+    z-index: 100;
     display: flex;
     gap: 10px;
 }

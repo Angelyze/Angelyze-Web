@@ -279,9 +279,7 @@ body::before {
     margin-bottom: 1rem;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 1);
     margin-top: 2rem;
-    color: #ffffff;
-    -webkit-text-stroke: 2px var(--accent-color);
-    text-stroke: 2px var(--accent-color);
+    color: #b51c1f;
 }
 
 .hero-subtitle {
@@ -289,8 +287,6 @@ body::before {
     margin-bottom: 2rem;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1);
     color: #ffffff;
-    -webkit-text-stroke: 1px var(--accent-color);
-    text-stroke: 1px var(--accent-color);
 }
 
 .hero .cta-button {

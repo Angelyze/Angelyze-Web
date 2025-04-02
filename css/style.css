@@ -53,7 +53,7 @@ body::before {
 
 /* Language Switcher */
 .language-switcher {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 1000;
@@ -146,6 +146,16 @@ body::before {
 
 .mobile-menu-btn {
     display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    width: 30px;
+    height: 2px;
+    background: var(--text-color);
+    transition: var(--transition);
 }
 
 /* Back to Top Button */
@@ -389,17 +399,19 @@ body::before {
         position: static;
         display: flex;
         align-items: center;
-        margin-right: auto;
     }
 
     .language-switcher {
-        position: static;
+        display: none;
+    }
+
+    .mobile-language-switcher {
         display: flex;
-        align-items: center;
         justify-content: center;
-        margin: 0;
-        padding: 0;
         gap: 10px;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .mobile-menu-btn {
@@ -434,6 +446,14 @@ body::before {
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
         z-index: 99;
         padding: 1rem;
+    }
+    
+    .nav-links.active .mobile-language-switcher {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .hero-title {

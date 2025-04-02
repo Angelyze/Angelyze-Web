@@ -30,13 +30,12 @@ langButtons.forEach(btn => {
 });
 
 // Mobile Menu
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const navLinks = document.querySelector('.nav-links');
-
-mobileMenuBtn.addEventListener('click', () => {
+function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     navLinks.classList.toggle('active');
     mobileMenuBtn.classList.toggle('active');
-});
+}
 
 // Smooth Scroll for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

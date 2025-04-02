@@ -398,6 +398,7 @@ body::before {
     .logo {
         display: flex;
         align-items: center;
+        margin-right: 10px;
     }
 
     .language-switcher {
@@ -410,6 +411,7 @@ body::before {
     .mobile-menu-btn {
         display: flex;
         align-items: center;
+        margin-left: 10px;
     }
 
     .navbar {

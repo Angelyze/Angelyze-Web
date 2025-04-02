@@ -593,6 +593,16 @@ body::before {
 .contact-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.contact-button.email:hover {
+    background: var(--primary-dark);
+}
+
+.contact-button.phone:hover {
+    background: var(--accent-color);
+    opacity: 0.9;
 }
 
 .contact-button i {

@@ -396,20 +396,25 @@ body::before {
     .logo {
         order: 1;
         margin-right: 10px;
+        display: flex;
+        align-items: center;
     }
 
     .mobile-menu-btn {
         order: 2;
         display: flex;
+        align-items: center;
     }
 
     .language-switcher {
         order: 3;
+        display: flex;
+        align-items: center;
         margin-right: 0;
     }
 
     .navbar {
-        height: 60px;
+        height: auto;
     }
 
     .nav-links {

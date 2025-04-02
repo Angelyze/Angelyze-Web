@@ -216,7 +216,7 @@ body::before {
     height: 100%;
     background: radial-gradient(
         circle at center,
-        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.1) 0%,
         rgba(0, 0, 0, 0.5) 50%,
         rgba(0, 0, 0, 0.7) 100%
     );
@@ -255,18 +255,30 @@ body::before {
     position: relative;
     z-index: 1;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+    padding: 2rem 0;
 }
 
 .hero-title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero .cta-button {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    align-self: center;
 }
 
 .cta-button {

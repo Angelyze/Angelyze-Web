@@ -518,7 +518,46 @@ body::before {
     color: var(--primary-color);
 }
 
-/* Responsive Design for About Us Page */
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+.contact-button.email {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.contact-button.phone {
+    background: var(--accent-color);
+    color: var(--white);
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button i {
+    font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
     .about-us {
         padding: 100px 1rem 3rem;
@@ -542,6 +581,17 @@ body::before {
 
     .contact-section {
         padding: 2rem;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-button {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
     }
 }
 

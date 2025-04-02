@@ -277,9 +277,10 @@ body::before {
 .hero-title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 30px rgb(255, 255, 255), 2px 2px 30px rgb(255, 255, 255);
+    text-shadow: 2px 2px 40px rgb(255, 255, 255), 2px 2px 40px rgb(255, 255, 255);
     margin-top: 2rem;
     color: #b51c1f;
+    -webkit-text-stroke: 2px #000000;
 }
 
 .hero-subtitle {

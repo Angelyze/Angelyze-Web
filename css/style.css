@@ -389,10 +389,13 @@ body::before {
 @media (max-width: 768px) {
     .nav-container {
         justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
     }
 
     .logo {
         order: 1;
+        margin-right: 10px;
     }
 
     .mobile-menu-btn {
@@ -402,7 +405,11 @@ body::before {
 
     .language-switcher {
         order: 3;
-        margin-right: 20px;
+        margin-right: 0;
+    }
+
+    .navbar {
+        height: 60px;
     }
 
     .nav-links {

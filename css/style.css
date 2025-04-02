@@ -55,7 +55,7 @@ body::before {
 .language-switcher {
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 100px;
     z-index: 1000;
     display: flex;
     gap: 10px;
@@ -413,6 +413,10 @@ body::before {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .language-switcher {
+        right: 20px;
     }
 }
 

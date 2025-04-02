@@ -38,24 +38,28 @@ function toggleMobileMenu() {
         // If we're opening the menu, clone the language switcher and add it to the mobile menu
         const languageSwitcher = document.querySelector('.language-switcher');
         
-        // Only add if it doesn't exist yet
-        if (!document.querySelector('.nav-links .mobile-language-switcher')) {
-            const mobileLanguageSwitcher = document.createElement('div');
-            mobileLanguageSwitcher.className = 'mobile-language-switcher';
-            mobileLanguageSwitcher.innerHTML = languageSwitcher.innerHTML;
-            
-            // Insert at the beginning of nav-links
-            navLinks.insertBefore(mobileLanguageSwitcher, navLinks.firstChild);
-            
-            // Add event listeners to the new buttons
-            const newLangButtons = mobileLanguageSwitcher.querySelectorAll('.lang-btn');
-            newLangButtons.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const lang = btn.dataset.lang;
-                    switchLanguage(lang);
-                });
-            });
+        // Always remove existing mobile language switcher to prevent duplicates
+        const existingMobileSwitcher = document.querySelector('.nav-links .mobile-language-switcher');
+        if (existingMobileSwitcher) {
+            existingMobileSwitcher.remove();
         }
+        
+        // Create new mobile language switcher
+        const mobileLanguageSwitcher = document.createElement('div');
+        mobileLanguageSwitcher.className = 'mobile-language-switcher';
+        mobileLanguageSwitcher.innerHTML = languageSwitcher.innerHTML;
+        
+        // Insert at the beginning of nav-links
+        navLinks.insertBefore(mobileLanguageSwitcher, navLinks.firstChild);
+        
+        // Add event listeners to the new buttons
+        const newLangButtons = mobileLanguageSwitcher.querySelectorAll('.lang-btn');
+        newLangButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang;
+                switchLanguage(lang);
+            });
+        });
     }
     
     navLinks.classList.toggle('active');

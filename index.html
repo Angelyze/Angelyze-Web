@@ -604,7 +604,7 @@ Proizvodnja raznih proizvoda koji nisu obuhvaćeni drugim kategorijama:
                 chatIcon.style.display = 'none';
                 if (!chatContainer.dataset.initialized) {
                     setTimeout(() => {
-                        displayBotMessage("👋 Pozdrav i dobrodošli na web stranicu Angelyze, kako vam možemo pomoći?");
+                        displayBotMessage("👋 Dobrodošli na web stranicu Angelyze, kako vam možemo pomoći?");
                     }, 300);
                     chatContainer.dataset.initialized = 'true';
                 }
@@ -652,7 +652,7 @@ Proizvodnja raznih proizvoda koji nisu obuhvaćeni drugim kategorijama:
                     body: JSON.stringify({
                         contents: [{
                             parts: [{
-                                text: `Korisnik je pitao: "${userMessage}". Primarno odgovori na hrvatskom, slovenskom, bosanskom, srpskom, ili enkleskom jeziku, ili o bilo kojem drugom jeziku, ovisno o korisnikovu unosu. Primarni gol ti je izgraditi povjerenje kod korisnika te pomoći sa što više informacija. Koristi smislene rečenice te se nadoveži pitanjem ako misliš da bi bilo u redu ili nadopuni sa kontakt informacijama. Formatiraj liste s " * " za bullet točke. Izbjegavaj nepotrebne simbole.
+                                text: `Korisnik je pitao: "${userMessage}". Odgovori na jeziku ovisno o korisnikovu unosu. Primarni gol ti je izgraditi povjerenje kod korisnika te pomoći sa što više informacija. Koristi smislene rečenice te se nadoveži pitanjem ako misliš da bi bilo u redu ili nadopuni sa kontakt informacijama. Formatiraj liste s " * " za bullet točke. Izbjegavaj nepotrebne simbole.
 
                                 Informacije o tvrtci:
                                 ${websiteData}

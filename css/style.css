@@ -667,7 +667,7 @@ body::before {
 }
 
 .contact-section {
-    background: var(--accent-color);
+    background: #ff5757;
     color: white;
     padding: 3rem;
     border-radius: 15px;

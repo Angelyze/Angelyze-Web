@@ -436,6 +436,15 @@ body::before {
     color: var(--primary-color);
 }
 
+.footer-section .contact-buttons {
+    justify-content: center;
+}
+
+.footer-section .social-links {
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 1.5rem;
@@ -469,6 +478,11 @@ body::before {
 
     .footer-section .contact-buttons {
         justify-content: center;
+    }
+
+    .footer-section .social-links {
+        justify-content: center;
+        margin-top: 1.5rem;
     }
 }
 
@@ -747,6 +761,38 @@ body::before {
 
 .contact-button i {
     font-size: 1.2rem;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {

@@ -21,7 +21,7 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     position: relative;
-    background: linear-gradient(330deg, #f4b900, #ffffff, #b51c1f);
+    background: linear-gradient(330deg, #b51c1f, #ffffff, #f4a900);
     background-size: 500% 100%;
     animation: gradient-animation 10s ease infinite;
 }

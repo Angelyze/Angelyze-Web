@@ -576,7 +576,7 @@ body {
 /* About Us Page Styles */
 .about-us {
     padding: 120px 1rem 4rem;
-    background: var(--bg-color);
+    background: transparent;
 }
 
 .page-title {
@@ -827,7 +827,7 @@ body {
 /* Products and Services Page Styles */
 .products-services {
     padding: 120px 1rem 4rem;
-    background: var(--bg-color);
+    background: transparent;
 }
 
 .intro-text {
@@ -933,7 +933,7 @@ body {
 /* Terms of Use Page Styles */
 .terms-of-use {
     padding: 120px 0 60px;
-    background-color: var(--background-color);
+    background-color: transparent;
     min-height: 100vh;
 }
 
@@ -1011,7 +1011,7 @@ body {
 /* Returns and Refunds Page Styles */
 .returns-refunds {
     padding: 120px 0 60px;
-    background-color: var(--background-color);
+    background-color: transparent;
     min-height: 100vh;
 }
 
@@ -1100,7 +1100,7 @@ body {
 /* Shop Redirect Pages Styles */
 .shop-redirect {
     padding: 120px 0 60px;
-    background-color: var(--background-color);
+    background-color: transparent;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1183,7 +1183,7 @@ body {
 /* Portfolio Section */
 .portfolio {
     padding: 2rem 0;
-    background-color: var(--background-color);
+    background-color: transparent;
 }
 
 .portfolio-grid {

@@ -21,34 +21,6 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     position: relative;
-    background: linear-gradient(-45deg, #ffffff, #f0f0f0, #fbfbfb, #fbfcd8);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-}
-
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Add a subtle overlay to ensure content readability */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.7);
-    z-index: -1;
-    pointer-events: none;
 }
 
 /* Language Switcher */

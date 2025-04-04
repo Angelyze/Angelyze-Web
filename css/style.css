@@ -22,7 +22,7 @@ body {
     overflow-x: hidden;
     position: relative;
     background: linear-gradient(334deg, #f4b900, #ffffff, #b51c1f);
-    background-size: 100% 200%;
+    background-size: 200% 100%;
     animation: gradient-animation 5s ease infinite;
 }
 

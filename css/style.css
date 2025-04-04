@@ -823,11 +823,17 @@ body::before {
     .contact-buttons {
         flex-direction: column;
         align-items: stretch;
+        margin-top: 1.5rem !important;
     }
     
     .contact-button {
         width: 100%;
         max-width: none;
+        margin-bottom: 0.8rem;
+    }
+
+    .contact-button:last-child {
+        margin-bottom: 0;
     }
 }
 

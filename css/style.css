@@ -330,7 +330,7 @@ body {
 
 /* Services Preview */
 .services-preview {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     background: transparent;
 }
 
@@ -342,7 +342,7 @@ body {
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: var(--accent-color);
 }
 
@@ -1182,7 +1182,7 @@ body {
 
 /* Portfolio Section */
 .portfolio {
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: transparent;
 }
 

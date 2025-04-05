@@ -330,7 +330,7 @@ body {
 
 /* Services Preview */
 .services-preview {
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     background: transparent;
 }
 
@@ -1182,7 +1182,7 @@ body {
 
 /* Portfolio Section */
 .portfolio {
-    padding: 1rem 0;
+    padding: 2rem 0;
     background-color: transparent;
 }
 

@@ -338,7 +338,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 .container {
@@ -1183,7 +1183,7 @@ body {
 
 /* Portfolio Section */
 .portfolio {
-    padding: 1rem 0;
+    padding: 2rem 0 1rem 0;
     background-color: transparent;
 }
 

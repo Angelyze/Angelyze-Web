@@ -857,25 +857,25 @@ Angelyze je napravio i ovaj ChatBot, te može napraviti i korisniku njegovu verz
             chatbox.scrollTop = chatbox.scrollHeight;
         }
 
-        function loadHistory() {
-            const savedHistory = localStorage.getItem('angelyzeChatHistory');
-            if (savedHistory) {
-                return JSON.parse(savedHistory);
-            } else {
-                return [
-                    {
-                        role: 'model',
-                        parts: [{ text: '👋 Dobrodošli na web stranicu Angelyze, kako vam možemo pomoći?' }],
-                        timestamp: getFormattedTime()
-                    }
-                ];
-            }
+function loadHistory() {
+    const savedHistory = localStorage.getItem('angelyzeChatHistory');
+    if (savedHistory) {
+        try {
+            return JSON.parse(savedHistory);
+        } catch (e) {
+            console.error('Failed to parse chat history:', e);
+            localStorage.removeItem('angelyzeChatHistory'); // Optional: clear invalid data
         }
-
-        function saveHistory() {
-            localStorage.setItem('angelyzeChatHistory', JSON.stringify(conversationHistory));
+    }
+    // Return default history if parsing fails or no history exists
+    return [
+        {
+            role: 'model',
+            parts: [{ text: '👋 Dobrodošli na web stranicu Angelyze, kako vam možemo pomoći?' }],
+            timestamp: getFormattedTime()
         }
-    });
+    ];
+}
 })();
 </script>
 </body>

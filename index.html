@@ -881,7 +881,8 @@ Angelyze je napravio i ovaj ChatBot, te može napraviti i korisniku njegovu verz
         function saveHistory() {
             localStorage.setItem('angelyzeChatHistory', JSON.stringify(conversationHistory));
         }
-    })();
+    }); // Closing the DOMContentLoaded event listener
+})(); // Closing the IIFE
 </script>
 </body>
 </html> 

@@ -296,6 +296,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    
 <!-- Angelyze AI Chatbot Widget HTML -->
 <style>
     #angelyze-chatbox::-webkit-scrollbar {
@@ -765,7 +766,7 @@ Angelyze je napravio i ovaj ChatBot, te može napraviti i korisniku njegovu verz
                     .replace(/</g, '<')
                     .replace(/>/g, '>')
                     .replace(/"/g, '"')
-                    .replace(/'/g, '''');
+                    .replace(/'/g, ''');
             };
             
             message = sanitizeHTML(message);
@@ -826,7 +827,7 @@ Angelyze je napravio i ovaj ChatBot, te može napraviti i korisniku njegovu verz
                 .replace(/</g, '<')
                 .replace(/>/g, '>')
                 .replace(/"/g, '"')
-                .replace(/'/g, '');
+                .replace(/'/g, ''');
                 
             chatbox.innerHTML += `
                 <div class="angelyze-chat-message angelyze-user-message">
@@ -857,26 +858,30 @@ Angelyze je napravio i ovaj ChatBot, te može napraviti i korisniku njegovu verz
             chatbox.scrollTop = chatbox.scrollHeight;
         }
 
-function loadHistory() {
-    const savedHistory = localStorage.getItem('angelyzeChatHistory');
-    if (savedHistory) {
-        try {
-            return JSON.parse(savedHistory);
-        } catch (e) {
-            console.error('Failed to parse chat history:', e);
-            localStorage.removeItem('angelyzeChatHistory'); // Optional: clear invalid data
+        function loadHistory() {
+            const savedHistory = localStorage.getItem('angelyzeChatHistory');
+            if (savedHistory) {
+                try {
+                    return JSON.parse(savedHistory);
+                } catch (e) {
+                    console.error('Failed to parse chat history:', e);
+                    localStorage.removeItem('angelyzeChatHistory'); // Optional: clear invalid data
+                }
+            }
+            // Return default history if parsing fails or no history exists
+            return [
+                {
+                    role: 'model',
+                    parts: [{ text: '👋 Dobrodošli na web stranicu Angelyze, kako vam možemo pomoći?' }],
+                    timestamp: getFormattedTime()
+                }
+            ];
         }
-    }
-    // Return default history if parsing fails or no history exists
-    return [
-        {
-            role: 'model',
-            parts: [{ text: '👋 Dobrodošli na web stranicu Angelyze, kako vam možemo pomoći?' }],
-            timestamp: getFormattedTime()
+
+        function saveHistory() {
+            localStorage.setItem('angelyzeChatHistory', JSON.stringify(conversationHistory));
         }
-    ];
-}
-})();
+    })();
 </script>
 </body>
 </html> 

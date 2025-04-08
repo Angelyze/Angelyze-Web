@@ -760,14 +760,14 @@ Angelyze je napravio i ovaj ChatBot, te može napraviti i korisniku njegovu verz
         function formatMessage(message) {
             message = message.trim();
             
-            const sanitizeHTML = (str) => {
-                return str
-                    .replace(/&/g, '&')
-                    .replace(/</g, '<')
-                    .replace(/>/g, '>')
-                    .replace(/"/g, '"')
-                    .replace(/'/g, ''');
-            };
+    const sanitizeHTML = (str) => {
+        return str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&apos;');
+    };
             
             message = sanitizeHTML(message);
             
@@ -826,8 +826,8 @@ Angelyze je napravio i ovaj ChatBot, te može napraviti i korisniku njegovu verz
                 .replace(/&/g, '&')
                 .replace(/</g, '<')
                 .replace(/>/g, '>')
-                .replace(/"/g, '"')
-                .replace(/'/g, ''');
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&apos;');
                 
             chatbox.innerHTML += `
                 <div class="angelyze-chat-message angelyze-user-message">

@@ -300,12 +300,14 @@
                 </div>
                 <div>
                     <style>
-                        /* Style the <a> tag to remove default underline and apply hover effect */
                         a {
-                          text-decoration: none; /* Optional: removes the underline from the link */
+                          text-decoration: none; /* Optional: removes the underline */
                         }
                         a:hover h3 {
-                          transform: scale(1.1); /* Scales the h3 to 1.1x on hover */
+                          transform: scale(1.1); /* Scales to 1.1x on hover */
+                        }
+                        h3 {
+                          transition: transform 0.3s ease; /* Smooth transition with ease timing */
                         }
                       </style>
                 <div class="footer-section">

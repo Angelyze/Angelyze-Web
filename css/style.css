@@ -23,7 +23,7 @@ body {
     position: relative;
     background: linear-gradient(330deg, #b51c1f, #ffffff, #f4a900);
     background-size: 500% 100%;
-    animation: gradient-animation 10s ease infinite;
+    animation: gradient-animation 6s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -93,7 +93,7 @@ body {
 }
 
 .logo img {
-    height: 60px;
+    height: 70px;
     transition: var(--transition);
 }
 

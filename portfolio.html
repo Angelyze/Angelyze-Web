@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Angelyze - Naši Projekti i Rješenja</title>
+    <meta name="description" content="Istražite naš portfolio projekata - od web aplikacija i AI chatbotova do digitalnog tiska i 3D rješenja. Pogledajte kako pretvaramo ideje u stvarnost.">
+    <meta name="keywords" content="portfolio Angelyze, web projekti, AI chatboti, digitalni tisak, 3D printanje, dizajn, Samobor, Hrvatska">
+    <meta name="author" content="Angelyze">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#f4b900">
+    <meta name="geo.region" content="HR">
+    <meta name="geo.placename" content="Samobor">
+    <meta name="geo.position" content="45.8;15.7167">
+    <meta name="ICBM" content="45.8, 15.7167">
+    
+    <link rel="icon" type="image/png" href="Angelyze.png">
+    <link rel="canonical" href="https://angelyze.org/portfolio.html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="Angelyze.png" alt="Angelyze Logo">
+            </a>
+            <div class="nav-links">
+                <a href="/" class="nav-link" data-hr="Početna" data-en="Home">Početna</a>
+                <a href="/proizvodi-i-usluge.html" class="nav-link" data-hr="Proizvodi i usluge" data-en="Products and Services">Proizvodi i usluge</a>
+                <a href="/portfolio.html" class="nav-link active" data-hr="Portfolio" data-en="Portfolio">Portfolio</a>
+                <a href="/web-shop.html" class="nav-link" data-hr="Web Shop" data-en="Web Shop">Web Shop</a>
+                <a href="/etsy-shop.html" class="nav-link" data-hr="Etsy Shop" data-en="Etsy Shop">Etsy Shop</a>
+                <a href="/o-nama.html" class="nav-link" data-hr="O nama" data-en="About Us">O nama</a>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="hr">HR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="container">
+            <h1 class="page-title" data-aos="fade-up" data-hr="Naš Portfolio" data-en="Our Portfolio">Naš Portfolio</h1>
+            <p class="portfolio-intro" data-aos="fade-up" data-hr="Otkrijte naše najnovije projekte i kreativna rješenja. Od web aplikacija i AI chatbotova do digitalnog tiska i 3D rješenja - pogledajte kako pretvaramo ideje u stvarnost." data-en="Discover our latest projects and creative solutions. From web applications and AI chatbots to digital printing and 3D solutions - see how we turn ideas into reality.">Otkrijte naše najnovije projekte i kreativna rješenja. Od web aplikacija i AI chatbotova do digitalnog tiska i 3D rješenja - pogledajte kako pretvaramo ideje u stvarnost.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-showcase">
+        <div class="container">
+            <div class="portfolio-categories" data-aos="fade-up">
+                <button class="category-btn active" data-category="all">Sve</button>
+                <button class="category-btn" data-category="web">Web Projekti</button>
+                <button class="category-btn" data-category="apps">Aplikacije</button>
+                <button class="category-btn" data-category="print">Tisak</button>
+                <button class="category-btn" data-category="3d">3D Rješenja</button>
+            </div>
+
+            <div class="portfolio-grid detailed">
+                <!-- AMAA AI Assistant -->
+                <div class="portfolio-item web" data-aos="fade-up">
+                    <img src="AMAA.png" alt="AMAA AI Assistant" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Web Projekti</span>
+                        <h3>AMAA AI Assistant</h3>
+                        <p class="portfolio-description">Novi svestrani AI asistent, sposoban za pretraživanje weba i mnogo više. AMAA je dizajniran da pruži inteligentnu pomoć u realnom vremenu, s mogućnošću pretraživanja interneta, analize podataka i pružanja relevantnih odgovora.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>Next.js</li>
+                                    <li>React</li>
+                                    <li>TypeScript</li>
+                                    <li>AI API Integration</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Značajke:</h4>
+                                <ul>
+                                    <li>Real-time web pretraživanje</li>
+                                    <li>Napredna AI analiza</li>
+                                    <li>Višejezična podrška</li>
+                                    <li>Responzivni dizajn</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://amaa.pro" target="_blank" class="cta-button" data-hr="Posjeti stranicu" data-en="Visit website">Posjeti stranicu</a>
+                    </div>
+                </div>
+
+                <!-- Free AI Tools Wiki -->
+                <div class="portfolio-item web" data-aos="fade-up" data-aos-delay="100">
+                    <img src="FreeAIWiki.png" alt="Free AI Tools Wiki" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Web Projekti</span>
+                        <h3>Free AI Tools Wiki</h3>
+                        <p class="portfolio-description">Enciklopedija koju pokreće zajednica za pronalaženje, uspoređivanje, učenje i preuzimanje besplatnih AI alata i usluga. Platforma omogućuje korisnicima da istražuju, ocjenjuju i dijele iskustva s različitim AI alatima.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>Next.js</li>
+                                    <li>MongoDB</li>
+                                    <li>Node.js</li>
+                                    <li>Tailwind CSS</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Značajke:</h4>
+                                <ul>
+                                    <li>Korisnički generirani sadržaj</li>
+                                    <li>Sustav ocjenjivanja</li>
+                                    <li>Napredna pretraga</li>
+                                    <li>Kategorije i filtriranje</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://freeaitools.wiki" target="_blank" class="cta-button" data-hr="Posjeti stranicu" data-en="Visit website">Posjeti stranicu</a>
+                    </div>
+                </div>
+
+                <!-- Convert Lab -->
+                <div class="portfolio-item web" data-aos="fade-up" data-aos-delay="150">
+                    <img src="Convert%20Lab%20Logo.png" alt="Convert Lab" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Web Projekti</span>
+                        <h3>Convert Lab</h3>
+                        <p class="portfolio-description">Convert Lab pruža inteligentnu obradu datoteka i mogućnosti transkripcije. Platforma omogućuje korisnicima da jednostavno konvertiraju različite formate datoteka i dobiju precizne transkripcije audio i video sadržaja.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>React</li>
+                                    <li>FFmpeg</li>
+                                    <li>WebAssembly</li>
+                                    <li>Cloud Functions</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Značajke:</h4>
+                                <ul>
+                                    <li>Višestruke konverzije formata</li>
+                                    <li>AI transkripcija</li>
+                                    <li>Batch procesiranje</li>
+                                    <li>Cloud pohrana</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://convertlab.pro/" target="_blank" class="cta-button" data-hr="Posjeti stranicu" data-en="Visit website">Posjeti stranicu</a>
+                    </div>
+                </div>
+
+                <!-- AI Chatbots -->
+                <div class="portfolio-item web" data-aos="fade-up" data-aos-delay="175">
+                    <img src="AngelyzeLogo.png" alt="AI Chatbots" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Web Projekti</span>
+                        <h3>AI Chatbots</h3>
+                        <p class="portfolio-description">Prilagođena AI Chatbot rješenja za svaku web stranicu. Naši chatbotovi koriste napredne AI modele za pružanje prirodne komunikacije i automatizaciju korisničke podrške.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>Next.js</li>
+                                    <li>OpenAI API</li>
+                                    <li>WebSocket</li>
+                                    <li>Redis</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Značajke:</h4>
+                                <ul>
+                                    <li>Prilagodljivi odgovori</li>
+                                    <li>Višejezična podrška</li>
+                                    <li>Analitika razgovora</li>
+                                    <li>Integracija s CRM-om</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://chatagents.vercel.app/" target="_blank" class="cta-button" data-hr="Posjeti stranicu" data-en="Visit website">Posjeti stranicu</a>
+                    </div>
+                </div>
+
+                <!-- FH Companion -->
+                <div class="portfolio-item apps" data-aos="fade-up" data-aos-delay="200">
+                    <img src="FH Companion.jpg" alt="FH Companion" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Android Aplikacije</span>
+                        <h3>FH Companion</h3>
+                        <p class="portfolio-description">Vaš osobni Fallout Hub, donoseći Wasteland na dlan vaše ruke. Aplikacija pruža sveobuhvatni vodič, informacije o igri i alate za poboljšanje gaming iskustva.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>Android Native</li>
+                                    <li>Kotlin</li>
+                                    <li>Room Database</li>
+                                    <li>Material Design</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Značajke:</h4>
+                                <ul>
+                                    <li>Offline pristup podacima</li>
+                                    <li>Interaktivne mape</li>
+                                    <li>Quest tracker</li>
+                                    <li>Build planner</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.goodbarber.fhcompanion" target="_blank" class="cta-button" data-hr="Pogledaj aplikaciju" data-en="See the app">Pogledaj aplikaciju</a>
+                    </div>
+                </div>
+
+                <!-- Gamer Hub -->
+                <div class="portfolio-item apps" data-aos="fade-up" data-aos-delay="300">
+                    <img src="Gamer Hub.jpg" alt="Gamer Hub" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Android Aplikacije</span>
+                        <h3>Gamer Hub</h3>
+                        <p class="portfolio-description">Centralni Hub za svakog igrača. Aplikacija okuplja najnovije gaming vijesti, recenzije, vodiče i povezuje gaming zajednicu na jednom mjestu.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>Android Native</li>
+                                    <li>Java</li>
+                                    <li>Firebase</li>
+                                    <li>ExoPlayer</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Značajke:</h4>
+                                <ul>
+                                    <li>Personalizirani feed</li>
+                                    <li>Push notifikacije</li>
+                                    <li>Video streaming</li>
+                                    <li>Društvene funkcije</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.goodbarber.gamerhub" target="_blank" class="cta-button" data-hr="Pogledaj aplikaciju" data-en="See the app">Pogledaj aplikaciju</a>
+                    </div>
+                </div>
+
+                <!-- Metal Hub -->
+                <div class="portfolio-item apps" data-aos="fade-up" data-aos-delay="350">
+                    <img src="Metal%20Hub%20512.jpg" alt="Metal Hub" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Android Aplikacije</span>
+                        <h3>Metal Hub</h3>
+                        <p class="portfolio-description">Enter the abyss of metal music with the Metal Hub. Aplikacija pruža sveobuhvatno iskustvo za ljubitelje metal glazbe, uključujući vijesti, recenzije i streaming sadržaj.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>Android Native</li>
+                                    <li>Kotlin</li>
+                                    <li>ExoPlayer</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Značajke:</h4>
+                                <ul>
+                                    <li>Glazbeni streaming</li>
+                                    <li>Vijesti iz metal scene</li>
+                                    <li>Koncertni kalendar</li>
+                                    <li>Društvene funkcije</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.goodbarber.matalhub" target="_blank" class="cta-button" data-hr="Pogledaj aplikaciju" data-en="See the app">Pogledaj aplikaciju</a>
+                    </div>
+                </div>
+
+                <!-- Digital Printing -->
+                <div class="portfolio-item print full-width-image" data-aos="fade-up" data-aos-delay="400">
+                    <img src="Digital Printing.jpg" alt="Digital Printing" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Digitalni Tisak</span>
+                        <h3>Digitalni Tisak</h3>
+                        <p class="portfolio-description">Pružamo vrhunske usluge digitalnog tiska na različitim materijalima i formatima. Naša oprema i stručnost omogućuju nam postizanje najboljih rezultata u tisku.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>UV tisak</li>
+                                    <li>DTG tisak</li>
+                                    <li>Sublimacijski tisak</li>
+                                    <li>Veliki formati</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Materijali:</h4>
+                                <ul>
+                                    <li>Tekstil</li>
+                                    <li>Papir</li>
+                                    <li>PVC</li>
+                                    <li>Keramika</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="/proizvodi-i-usluge.html" class="cta-button" data-hr="Saznaj više" data-en="Learn more">Saznaj više</a>
+                    </div>
+                </div>
+
+                <!-- 3D Design & Print -->
+                <div class="portfolio-item 3d full-width-image" data-aos="fade-up" data-aos-delay="500">
+                    <img src="3D Printing.jpg" alt="3D Design & Print" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">3D Dizajn & Print</span>
+                        <h3>3D Dizajn & Print</h3>
+                        <p class="portfolio-description">Pretvaramo vašu maštovitost u stvarnost kroz 3D modeliranje i printanje. Koristimo najnoviju tehnologiju UV resin printanja za postizanje iznimne preciznosti i kvalitete.</p>
+                        <div class="portfolio-details">
+                            <div class="tech-stack">
+                                <h4>Tehnologije:</h4>
+                                <ul>
+                                    <li>UV Resin printing</li>
+                                    <li>3D modeliranje</li>
+                                    <li>3D skeniranje</li>
+                                    <li>Post-processing</li>
+                                </ul>
+                            </div>
+                            <div class="project-features">
+                                <h4>Primjene:</h4>
+                                <ul>
+                                    <li>Prototipovi</li>
+                                    <li>Figurice</li>
+                                    <li>Umjetnički projekti</li>
+                                    <li>Funkcionalni dijelovi</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="/proizvodi-i-usluge.html" class="cta-button" data-hr="Saznaj više" data-en="Learn more">Saznaj više</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: rgba(44, 62, 80, 0.9); backdrop-filter: blur(10px);">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-hr="Kontakt" data-en="Contact">Kontakt</h3>
+                    <p>Angelyze, obrt za tisak, vl. Anđelko Horvat</p>
+                    <p>Mali Lipovec 46, 10430 Samobor</p>
+                    <p>Tel.: +38598645482</p>
+                    <p>Email: info@angelyze.org</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-hr="Brzi Linkovi" data-en="Quick Links">Brzi Linkovi</h3>
+                    <ul>
+                        <li><a href="/" data-hr="Početna" data-en="Home">Početna</a></li>
+                        <li><a href="/proizvodi-i-usluge.html" data-hr="Proizvodi i usluge" data-en="Products and Services">Proizvodi i usluge</a></li>
+                        <li><a href="/portfolio.html" data-hr="Portfolio" data-en="Portfolio">Portfolio</a></li>
+                        <li><a href="/o-nama.html" data-hr="O nama" data-en="About Us">O nama</a></li>
+                        <li><a href="/web-shop.html" data-hr="Web Shop" data-en="Web Shop">Web Shop</a></li>
+                        <li><a href="/etsy-shop.html" data-hr="Etsy Shop" data-en="Etsy Shop">Etsy Shop</a></li>
+                        <li><a href="/uvjeti-koristenja.html" data-hr="Uvjeti Korištenja" data-en="Terms of Use">Uvjeti Korištenja</a></li>
+                        <li><a href="/zamjena-i-povrati.html" data-hr="Zamjena i Povrati" data-en="Returns and Refunds">Zamjena i Povrati</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <a href="https://chatagents.vercel.app">
+                        <h3 data-hr="! Novo u Ponudi - ChatAgents" data-en="! New in Offer - ChatAgents">! Novo u Ponudi - ChatAgents</h3>
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h3 data-hr="Kontaktirajte Nas" data-en="Contact Us">Kontaktirajte Nas</h3>
+                    <div class="contact-buttons">
+                        <a href="mailto:info@angelyze.org" class="contact-button email" data-hr="Pošalji Email" data-en="Send Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Pošalji Email</span>
+                        </a>
+                        <a href="tel:+38598645482" class="contact-button phone" data-hr="Pozovi" data-en="Call">
+                            <i class="fas fa-phone"></i>
+                            <span>Pozovi</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Angelyzeee" target="_blank" class="social-link">
+                            <img src="Facebook.png" alt="Facebook" class="social-icon">
+                            <span data-hr="Facebook" data-en="Facebook">Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/angelyzeee/" target="_blank" class="social-link">
+                            <img src="Instagram.png" alt="Instagram" class="social-icon">
+                            <span data-hr="Instagram" data-en="Instagram">Instagram</span>
+                        </a>
+                        <a href="https://x.com/Angelyzeee" target="_blank" class="social-link">
+                            <img src="X.png" alt="X/Twitter" class="social-icon">
+                            <span data-hr="X/Twitter" data-en="X/Twitter">X/Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a href="https://angelyze.org/">Angelyze</a>. <span data-hr="Sva prava pridržana" data-en="All rights reserved">Sva prava pridržana</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -138,6 +138,7 @@
             <div class="nav-links">
                 <a href="/" class="nav-link" data-hr="Početna" data-en="Home">Početna</a>
                 <a href="/proizvodi-i-usluge.html" class="nav-link" data-hr="Proizvodi i usluge" data-en="Products and Services">Proizvodi i usluge</a>
+                <a href="/portfolio.html" class="nav-link" data-hr="Portfolio" data-en="Portfolio">Portfolio</a>
                 <a href="/web-shop.html" class="nav-link" data-hr="Web Shop" data-en="Web Shop">Web Shop</a>
                 <a href="/etsy-shop.html" class="nav-link" data-hr="Etsy Shop" data-en="Etsy Shop">Etsy Shop</a>
                 <a href="/o-nama.html" class="nav-link" data-hr="O nama" data-en="About Us">O nama</a>
@@ -159,7 +160,10 @@
         <div class="hero-content" data-aos="fade-up">
             <h1 class="hero-title" data-hr="Dobrodošli u svijet Angelyze" data-en="Welcome to the world of Angelyze">Dobrodošli u svijet Angelyze</h1>
             <p class="hero-subtitle" data-hr="Vaš pouzdani partner za stvaranje magije u digitalnim uslugama, tisku i dizajnu" data-en="Your trusted partner for creating magic in digital services, printing and design">Vaš pouzdani partner za stvaranje magije u digitalnim uslugama, tisku i dizajnu</p>
-            <a href="/proizvodi-i-usluge.html" class="cta-button" data-hr="Pogledajte naše usluge" data-en="View our services">Pogledajte naše usluge</a>
+            <div class="hero-buttons">
+                <a href="/proizvodi-i-usluge.html" class="cta-button" data-hr="Pogledajte Usluge" data-en="View Services">Pogledajte Usluge</a>
+                <a href="/portfolio.html" class="cta-button" data-hr="Pogledajte Portfolio" data-en="View Portfolio">Pogledajte Portfolio</a>
+            </div>
         </div>
     </section>
 
@@ -230,104 +234,52 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio-section">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up" data-hr="Naš Portfolio" data-en="Our Portfolio">Naš Portfolio</h2>
-            <div class="portfolio-grid">
-                <!-- Web Projects -->
-                <div class="portfolio-item" data-aos="fade-up">
-                    <img src="AMAA.png" alt="AMAA AI Assistant" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="Web Projekti" data-en="Web Projects">Web Projekti</span>
-                        <h3>AMAA AI Assistant</h3>
-                        <p data-hr="Novi svestrani AI asistent, sposoban za pretraživanje weba i mnogo više." data-en="New versatile AI Assistant, capable of searching web and much more.">Novi svestrani AI asistent, sposoban za pretraživanje weba i mnogo više.</p>
-                        <a href="https://amaa.pro" target="_blank" class="cta-button" data-hr="Posjeti stranicu" data-en="Visit website">Posjeti stranicu</a>
+            <div class="portfolio-categories" data-aos="fade-up" data-aos-delay="100">
+                <button class="category-btn active" data-category="all" data-hr="Sve" data-en="All">Sve</button>
+                <button class="category-btn" data-category="ai" data-hr="AI Rješenja" data-en="AI Solutions">AI Rješenja</button>
+                <button class="category-btn" data-category="web" data-hr="Web Razvoj" data-en="Web Development">Web Razvoj</button>
+                <button class="category-btn" data-category="consulting" data-hr="Konzalting" data-en="Consulting">Konzalting</button>
+            </div>
+            <div class="portfolio-grid detailed">
+                <!-- Free AI Tools Wiki -->
+                <div class="portfolio-item ai web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="images/Free%20AI%20Tools%20Wiki.png" alt="Free AI Tools Wiki">
                     </div>
-                </div>
-
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="FreeAIWiki.png" alt="Free AI Tools Wiki" class="portfolio-image">
                     <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="Web Projekti" data-en="Web Projects">Web Projekti</span>
+                        <span class="category" data-hr="AI & Web Razvoj" data-en="AI & Web Development">AI & Web Razvoj</span>
                         <h3>Free AI Tools Wiki</h3>
-                        <p data-hr="Enciklopedija koju pokreće zajednica za pronalaženje, uspoređivanje, učenje i preuzimanje besplatnih AI alata i usluga." data-en="Community-driven encyclopedia for finding, comparing, learning, and downloading free AI tools and services.">Enciklopedija koju pokreće zajednica za pronalaženje, uspoređivanje, učenje i preuzimanje besplatnih AI alata i usluga.</p>
-                        <a href="https://freeaitools.wiki" target="_blank" class="cta-button" data-hr="Posjeti stranicu" data-en="Visit website">Posjeti stranicu</a>
+                        <p class="portfolio-description" data-hr="Sveobuhvatni direktorij besplatnih AI alata i resursa." data-en="A comprehensive directory of free AI tools and resources.">Sveobuhvatni direktorij besplatnih AI alata i resursa.</p>
+                        <a href="https://freeaitoolswiki.com" class="cta-button" target="_blank" data-hr="Posjeti Web" data-en="Visit Website">Posjeti Web</a>
                     </div>
                 </div>
 
                 <!-- Convert Lab -->
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="150">
-                    <img src="Convert%20Lab%20Logo.png" alt="Convert Lab" class="portfolio-image">
+                <div class="portfolio-item ai consulting" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="images/Convert%20Lab%20Logo.png" alt="Convert Lab">
+                    </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="Web Projekti" data-en="Web Projects">Web Projekti</span>
+                        <span class="category" data-hr="AI & Konzalting" data-en="AI & Consulting">AI & Konzalting</span>
                         <h3>Convert Lab</h3>
-                        <p data-hr="Convert Lab pruža inteligentnu obradu datoteka i mogućnosti transkripcije." data-en="Convert Lab provide intelligent file processing and transcription capabilities.">Convert Lab pruža inteligentnu obradu datoteka i mogućnosti transkripcije.</p>
-                        <a href="https://convertlab.pro/" target="_blank" class="cta-button" data-hr="Posjeti stranicu" data-en="Visit website">Posjeti stranicu</a>
+                        <p class="portfolio-description" data-hr="Specijalizirana AI rješenja za optimizaciju i automatizaciju poslovnih procesa." data-en="Specialized AI solutions for business process optimization and automation.">Specijalizirana AI rješenja za optimizaciju i automatizaciju poslovnih procesa.</p>
+                        <a href="https://convertlab.ai" class="cta-button" target="_blank" data-hr="Posjeti Web" data-en="Visit Website">Posjeti Web</a>
                     </div>
                 </div>
 
                 <!-- AI Chatbots -->
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="175">
-                    <img src="AngelyzeLogo.png" alt="AI Chatbots" class="portfolio-image">
+                <div class="portfolio-item ai" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="images/AngelyzeLogo.png" alt="AI Chatbots">
+                    </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="Web Projekti" data-en="Web Projects">Web Projekti</span>
+                        <span class="category" data-hr="AI Rješenja" data-en="AI Solutions">AI Rješenja</span>
                         <h3>AI Chatbots</h3>
-                        <p data-hr="Prilagođena AI Chatbot rješenja za svaku web stranicu" data-en="Custom AI Chatbot solutions for every website">Prilagođena AI Chatbot rješenja za svaku web stranicu</p>
-                        <a href="https://chatagents.vercel.app/" target="_blank" class="cta-button" data-hr="Posjeti stranicu" data-en="Visit website">Posjeti stranicu</a>
-                    </div>
-                </div>
-
-                <!-- Android Apps -->
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="FH Companion.jpg" alt="FH Companion" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="Android Aplikacije" data-en="Android Apps">Android Aplikacije</span>
-                        <h3>FH Companion</h3>
-                        <p data-hr="Vaš osobni Fallout Hub, donoseći Wasteland na dlan vaše ruke." data-en="Your personal Fallout Hub, bringing the Wasteland to the palm of your hand.">Vaš osobni Fallout Hub, donoseći Wasteland na dlan vaše ruke.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.goodbarber.fhcompanion" target="_blank" class="cta-button" data-hr="Pogledaj aplikaciju" data-en="See the app">Pogledaj aplikaciju</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
-                    <img src="Gamer Hub.jpg" alt="Gamer Hub" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="Android Aplikacije" data-en="Android Apps">Android Aplikacije</span>
-                        <h3>Gamer Hub</h3>
-                        <p data-hr="Centralni Hub za svakog igrača." data-en="A central Hub for every Gamer.">Centralni Hub za svakog igrača.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.goodbarber.gamerhub" target="_blank" class="cta-button" data-hr="Pogledaj aplikaciju" data-en="See the app">Pogledaj aplikaciju</a>
-                    </div>
-                </div>
-
-                <!-- Metal Hub -->
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="350">
-                    <img src="Metal%20Hub%20512.jpg" alt="Metal Hub" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="Android Aplikacije" data-en="Android Apps">Android Aplikacije</span>
-                        <h3>Metal Hub</h3>
-                        <p data-hr="Enter the abyss of metal music with the Metal Hub" data-en="Enter the abyss of metal music with the Metal Hub">Enter the abyss of metal music with the Metal Hub</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.goodbarber.matalhub" target="_blank" class="cta-button" data-hr="Pogledaj aplikaciju" data-en="See the app">Pogledaj aplikaciju</a>
-                    </div>
-                </div>
-
-                <!-- Digital Printing -->
-                <div class="portfolio-item full-width-image" data-aos="fade-up" data-aos-delay="400">
-                    <img src="Digital Printing.jpg" alt="Digital Printing" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="Digitalni Tisak" data-en="Digital Printing">Digitalni Tisak</span>
-                        <h3 data-hr="Digitalni Tisak" data-en="Digital Printing">Digitalni Tisak</h3>
-                        <p data-hr="Možemo tiskati na sve!" data-en="We can print on everything!">Možemo tiskati na sve!</p>
-                        <a href="/proizvodi-i-usluge.html" class="cta-button" data-hr="Saznaj više" data-en="Learn more">Saznaj više</a>
-                    </div>
-                </div>
-
-                <!-- 3D Design & Print -->
-                <div class="portfolio-item full-width-image" data-aos="fade-up" data-aos-delay="500">
-                    <img src="3D Printing.jpg" alt="3D Design & Print" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <span class="portfolio-category" data-hr="3D Dizajn & Print" data-en="3D Design & Print">3D Dizajn & Print</span>
-                        <h3 data-hr="3D Dizajn & Print" data-en="3D Design & Print">3D Dizajn & Print</h3>
-                        <p data-hr="Pretvaramo vašu maštovitost u stvarnost!" data-en="We make your imagination a reality!">Pretvaramo vašu maštovitost u stvarnost!</p>
-                        <a href="/proizvodi-i-usluge.html" class="cta-button" data-hr="Saznaj više" data-en="Learn more">Saznaj više</a>
+                        <p class="portfolio-description" data-hr="Prilagođena AI chatbot rješenja za poboljšanu korisničku podršku." data-en="Custom AI chatbot solutions for enhanced customer engagement and support.">Prilagođena AI chatbot rješenja za poboljšanu korisničku podršku.</p>
+                        <a href="#contact" class="cta-button" data-hr="Kontaktirajte Nas" data-en="Contact Us">Kontaktirajte Nas</a>
                     </div>
                 </div>
             </div>
@@ -377,6 +329,7 @@
                     <ul>
                         <li><a href="/" data-hr="Početna" data-en="Home">Početna</a></li>
                         <li><a href="/proizvodi-i-usluge.html" data-hr="Proizvodi i usluge" data-en="Products and Services">Proizvodi i usluge</a></li>
+                        <li><a href="/portfolio.html" data-hr="Portfolio" data-en="Portfolio">Portfolio</a></li>
                         <li><a href="/o-nama.html" data-hr="O nama" data-en="About Us">O nama</a></li>
                         <li><a href="/web-shop.html" data-hr="Web Shop" data-en="Web Shop">Web Shop</a></li>
                         <li><a href="/etsy-shop.html" data-hr="Etsy Shop" data-en="Etsy Shop">Etsy Shop</a></li>

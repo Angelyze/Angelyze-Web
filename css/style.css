@@ -486,15 +486,21 @@ body {
     margin-bottom: 0.3rem;
 }
 
+.footer-section .footer-logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+}
+
 .footer-section a {
-    color: white;
+    color: #f4b900;
     text-decoration: none;
-    transition: var(--transition);
-    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-    color: var(--primary-color);
+    color: #ffffff;
 }
 
 .footer-section .contact-buttons {

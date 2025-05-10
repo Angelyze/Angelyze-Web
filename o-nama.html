@@ -17,7 +17,7 @@
 
     <!-- Language alternates -->
     <link rel="alternate" hreflang="hr" href="https://angelyze.org/o-nama.html">
-    <link rel="alternate" hreflang="en" href="https://angelyze.org/en/o-nama.html">
+    <link rel="alternate" hreflang="en" href="https://angelyze.org/en/about-us.html">
     <link rel="alternate" hreflang="x-default" href="https://angelyze.org/o-nama.html">
 
     <!-- Preconnect to external domains -->
@@ -49,14 +49,18 @@
       "@context": "https://schema.org",
       "@type": "AboutPage",
       "mainEntity": {
-        "@type": "Organization",
+        "@type": ["Organization", "LocalBusiness"],
         "name": "Angelyze",
+        "alternateName": "ANGELYZE, vl. Anđelko Horvat",
         "url": "https://angelyze.org",
         "logo": "https://angelyze.org/Angelyze.png",
         "image": "https://angelyze.org/Usluge.jpg",
-        "description": "Profesionalne usluge tiska, dizajna, 3D modeliranja i web & app rješenja",
-        "slogan": "Vaš pouzdani partner za kreativna rješenja",
+        "description": "Profesionalne usluge tiska, dizajna, 3D modeliranja i web & app rješenja u Samoboru i cijeloj Hrvatskoj",
+        "slogan": "Vaš pouzdani partner za stvaranje magije u digitalnim uslugama, tisku i dizajnu",
         "foundingDate": "2023-02-06",
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Credit Card, Bank Transfer",
         "foundingLocation": {
           "@type": "Place",
           "address": {
@@ -81,6 +85,14 @@
           "latitude": "45.8",
           "longitude": "15.7167"
         },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+38598645482",
@@ -100,18 +112,79 @@
           "Web Development",
           "AI Chatbots",
           "SEO Optimization",
-          "Brand Development"
+          "Brand Development",
+          "Social Media Management",
+          "Dropshipping",
+          "Affiliate Marketing",
+          "Jewelry Production"
         ],
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": "45.8",
-            "longitude": "15.7167"
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Samobor"
           },
-          "geoRadius": "100000"
+          {
+            "@type": "City",
+            "name": "Zagreb"
+          },
+          {
+            "@type": "Country",
+            "name": "Croatia"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Angelyze Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Chatbot Development",
+                "description": "Custom AI chatbot solutions for businesses"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Web Design & Development",
+                "description": "Professional website creation and web solutions for businesses"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Digital Printing",
+                "description": "High-quality printing on textiles, leather, PVC, vinyl, and more"
+              }
+            }
+          ]
         }
       }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Početna",
+          "item": "https://angelyze.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "O Nama",
+          "item": "https://angelyze.org/o-nama.html"
+        }
+      ]
     }
     </script>
 

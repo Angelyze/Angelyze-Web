@@ -17,7 +17,7 @@
 
     <!-- Language alternates -->
     <link rel="alternate" hreflang="hr" href="https://angelyze.org/proizvodi-i-usluge.html">
-    <link rel="alternate" hreflang="en" href="https://angelyze.org/proizvodi-i-usluge.html">
+    <link rel="alternate" hreflang="en" href="https://angelyze.org/en/products-and-services.html">
     <link rel="alternate" hreflang="x-default" href="https://angelyze.org/proizvodi-i-usluge.html">
 
     <!-- Open Graph / Facebook -->
@@ -58,7 +58,13 @@
             "@type": "Country",
             "name": "Croatia"
           },
-          "url": "https://chatagents.vercel.app/"
+          "url": "https://chatagents.vercel.app/",
+          "offers": {
+            "@type": "Offer",
+            "price": "49",
+            "priceCurrency": "EUR",
+            "priceValidUntil": "2025-12-31"
+          }
         },
         {
           "@type": "Service",
@@ -67,11 +73,27 @@
           "description": "High-quality printing on t-shirts, hoodies, and other textiles",
           "provider": {
             "@type": "Organization",
-            "name": "Angelyze"
+            "name": "Angelyze",
+            "url": "https://angelyze.org"
           },
-          "areaServed": {
-            "@type": "City",
-            "name": "Samobor"
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Samobor"
+            },
+            {
+              "@type": "City",
+              "name": "Zagreb"
+            },
+            {
+              "@type": "Country",
+              "name": "Croatia"
+            }
+          ],
+          "serviceOutput": {
+            "@type": "Thing",
+            "name": "Printed Textiles",
+            "description": "Custom printed t-shirts, hoodies, bags, and other textile products"
           }
         },
         {
@@ -81,7 +103,17 @@
           "description": "Professional 3D printing with UV resin technology",
           "provider": {
             "@type": "Organization",
-            "name": "Angelyze"
+            "name": "Angelyze",
+            "url": "https://angelyze.org"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Croatia"
+          },
+          "serviceOutput": {
+            "@type": "Thing",
+            "name": "3D Printed Objects",
+            "description": "High-quality 3D printed objects using UV resin technology"
           }
         },
         {
@@ -91,7 +123,17 @@
           "description": "Modern, responsive website design and development",
           "provider": {
             "@type": "Organization",
-            "name": "Angelyze"
+            "name": "Angelyze",
+            "url": "https://angelyze.org"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Croatia"
+          },
+          "serviceOutput": {
+            "@type": "Thing",
+            "name": "Websites and Web Applications",
+            "description": "Professional, responsive websites and web applications"
           }
         },
         {
@@ -101,18 +143,88 @@
           "description": "Search engine optimization and digital marketing services",
           "provider": {
             "@type": "Organization",
-            "name": "Angelyze"
+            "name": "Angelyze",
+            "url": "https://angelyze.org"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Croatia"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 6,
+          "name": "Graphic Design",
+          "description": "Professional graphic design services for all printed products",
+          "provider": {
+            "@type": "Organization",
+            "name": "Angelyze",
+            "url": "https://angelyze.org"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Croatia"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 7,
+          "name": "Social Media Management",
+          "description": "Professional management of social media profiles and content",
+          "provider": {
+            "@type": "Organization",
+            "name": "Angelyze",
+            "url": "https://angelyze.org"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Croatia"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 8,
+          "name": "Dropshipping & Affiliate Marketing",
+          "description": "Dropshipping and affiliate marketing services for businesses",
+          "provider": {
+            "@type": "Organization",
+            "name": "Angelyze",
+            "url": "https://angelyze.org"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Croatia"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 9,
+          "name": "Imitation Jewelry Production",
+          "description": "Custom imitation jewelry production using various materials",
+          "provider": {
+            "@type": "Organization",
+            "name": "Angelyze",
+            "url": "https://angelyze.org"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Croatia"
           }
         }
       ],
-      "numberOfItems": 5,
+      "numberOfItems": 9,
       "provider": {
-        "@type": "Organization",
+        "@type": ["Organization", "LocalBusiness"],
         "name": "Angelyze",
+        "alternateName": "ANGELYZE, vl. Anđelko Horvat",
         "url": "https://angelyze.org",
         "logo": "https://angelyze.org/Angelyze.png",
         "image": "https://angelyze.org/Usluge2.jpg",
-        "description": "Professional printing, design, and digital solutions provider",
+        "description": "Professional printing, design, and digital solutions provider in Samobor, Croatia",
+        "slogan": "Vaš pouzdani partner za stvaranje magije u digitalnim uslugama, tisku i dizajnu",
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Credit Card, Bank Transfer",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Mali Lipovec 46",
@@ -126,14 +238,49 @@
           "latitude": "45.8",
           "longitude": "15.7167"
         },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+38598645482",
           "contactType": "customer service",
           "email": "info@angelyze.org",
           "availableLanguage": ["Croatian", "English"]
-        }
+        },
+        "sameAs": [
+          "https://www.facebook.com/Angelyzeee",
+          "https://www.instagram.com/angelyzeee/",
+          "https://x.com/Angelyzeee"
+        ]
       }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Početna",
+          "item": "https://angelyze.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Proizvodi i Usluge",
+          "item": "https://angelyze.org/proizvodi-i-usluge.html"
+        }
+      ]
     }
     </script>
 

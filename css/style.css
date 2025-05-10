@@ -154,13 +154,13 @@ body {
     align-items: center;
     transition: all 0.5s ease;
     margin: 0 auto;
-    padding-left: 11rem; /* Further increased padding to align with the end of larger ANGELYZE */
+    padding-left: 12rem; /* Further increased padding to align with the end of larger ANGELYZE */
     padding-right: 1rem; /* Added right padding to balance with language icon */
 }
 
 .large-header .nav-links {
     gap: 2.2rem;
-    padding-left: 13rem; /* Increased padding in large header state */
+    padding-left: 14rem; /* Increased padding in large header state */
     padding-right: 1rem; /* Added right padding in large header state */
 }
 

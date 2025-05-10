@@ -222,7 +222,7 @@ body {
         circle at center,
         transparent 0%,
         rgba(0, 0, 0, 0.0) 30%,
-        rgba(0, 0, 0, 0.5) 60%, 
+        rgba(0, 0, 0, 0.5) 60%,
         rgba(0, 0, 0, 0.8) 80%,
         black 100%
     );
@@ -230,7 +230,7 @@ body {
         circle at center,
         transparent 0%,
         rgba(0, 0, 0, 0.0) 30%,
-        rgba(0, 0, 0, 0.5) 60%, 
+        rgba(0, 0, 0, 0.5) 60%,
         rgba(0, 0, 0, 0.8) 80%,
         black 100%
     );
@@ -615,7 +615,7 @@ body {
         z-index: 99;
         padding: 1rem;
     }
-    
+
     .nav-links.active .mobile-language-switcher {
         display: flex;
         justify-content: center;
@@ -763,10 +763,155 @@ body {
 .contact-section h2 {
     color: white;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .contact-section h2::after {
     background: var(--primary-color);
+}
+
+.contact-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.contact-info-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.company-name {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-detail i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-detail a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-detail a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.social-icon-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.contact-form-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.submit-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-info {
@@ -892,12 +1037,21 @@ body {
         padding: 2rem;
     }
 
+    .contact-flex-container {
+        flex-direction: column;
+    }
+
+    .contact-info-container,
+    .contact-form-container {
+        width: 100%;
+    }
+
     .contact-buttons {
         flex-direction: column;
         align-items: stretch;
         margin-top: 1.5rem !important;
     }
-    
+
     .contact-button {
         width: 100%;
         max-width: none;
@@ -906,6 +1060,10 @@ body {
 
     .contact-button:last-child {
         margin-bottom: 0;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
     }
 }
 
@@ -1402,4 +1560,4 @@ body {
     .portfolio-content h3 {
         font-size: 1.5rem;
     }
-} 
+}

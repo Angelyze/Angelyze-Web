@@ -42,7 +42,7 @@ body {
 /* Language Switcher */
 .language-switcher {
     position: absolute;
-    right: 1rem;
+    right: 1.5rem;
     z-index: 100;
     display: flex;
     gap: 10px;
@@ -50,7 +50,7 @@ body {
 }
 
 .large-header .language-switcher {
-    right: 1.2rem;
+    right: 1.5rem;
 }
 
 .lang-toggle {
@@ -84,15 +84,16 @@ body {
     left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     z-index: 100;
     box-shadow: none;
     transition: all 0.5s ease;
 }
 
 .navbar.large-header {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     padding: 0.5rem 0;
+    backdrop-filter: blur(3px);
 }
 
 .nav-container {
@@ -112,11 +113,16 @@ body {
 
 .logo {
     position: absolute;
-    left: 1rem;
+    left: 1.5rem;
     display: flex;
     align-items: center;
     text-decoration: none;
     transition: all 0.5s ease;
+}
+
+.logo:hover img,
+.logo:hover .logo-text {
+    transform: scale(1.05);
 }
 
 .logo img {
@@ -128,10 +134,6 @@ body {
     height: 80px; /* Reduced from 90px to 80px */
 }
 
-.logo img:hover {
-    transform: scale(1.05);
-}
-
 .logo-text {
     font-size: 1.8rem;
     font-weight: bold;
@@ -141,11 +143,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
-}
-
-.logo-text:hover {
-    transform: scale(1.05); /* Same hover effect as logo image */
+    transition: var(--transition);
 }
 
 .large-header .logo-text {
@@ -158,11 +156,13 @@ body {
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
-    margin-right: 0;
+    margin: 0 auto;
+    padding-left: 2rem; /* Add padding to offset the logo */
 }
 
 .large-header .nav-links {
-    gap: 2.2rem; /* Reduced from 2.5rem to 2.2rem */
+    gap: 2.2rem;
+    padding-left: 3rem; /* Increase padding in large header state */
 }
 
 .nav-link {
@@ -793,6 +793,7 @@ section {
         position: static;
         display: flex;
         align-items: center;
+        margin-right: 1rem;
     }
 
     .large-header .logo img {
@@ -830,6 +831,8 @@ section {
 
     .nav-links {
         display: none;
+        padding-left: 0;
+        margin: 0;
     }
 
     .nav-links.active {
@@ -840,7 +843,7 @@ section {
         left: 0;
         width: 100%;
         background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
         z-index: 99;
         padding: 1rem;
@@ -848,6 +851,7 @@ section {
 
     .large-header .nav-links.active {
         top: 80px;
+        backdrop-filter: blur(3px);
     }
 
     .nav-links.active .mobile-language-switcher {

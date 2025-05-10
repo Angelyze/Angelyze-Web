@@ -6,7 +6,7 @@ AOS.init({
 });
 
 // Language Switching
-const langButtons = document.querySelectorAll('.lang-btn');
+const langToggle = document.querySelector('.lang-toggle');
 const elements = document.querySelectorAll('[data-hr]');
 
 function switchLanguage(lang) {
@@ -16,18 +16,21 @@ function switchLanguage(lang) {
         }
     });
 
-    // Update active button
-    langButtons.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === lang);
-    });
+    // Update toggle button text
+    if (langToggle) {
+        langToggle.textContent = lang.toUpperCase();
+        langToggle.dataset.current = lang;
+    }
 }
 
-langButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const lang = btn.dataset.lang;
-        switchLanguage(lang);
+// Add event listener to the language toggle button
+if (langToggle) {
+    langToggle.addEventListener('click', () => {
+        const currentLang = langToggle.dataset.current;
+        const newLang = currentLang === 'hr' ? 'en' : 'hr';
+        switchLanguage(newLang);
     });
-});
+}
 
 // Mobile Menu
 function toggleMobileMenu() {
@@ -52,14 +55,15 @@ function toggleMobileMenu() {
         // Insert at the beginning of nav-links
         navLinks.insertBefore(mobileLanguageSwitcher, navLinks.firstChild);
 
-        // Add event listeners to the new buttons
-        const newLangButtons = mobileLanguageSwitcher.querySelectorAll('.lang-btn');
-        newLangButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const lang = btn.dataset.lang;
-                switchLanguage(lang);
+        // Add event listener to the new toggle button
+        const newLangToggle = mobileLanguageSwitcher.querySelector('.lang-toggle');
+        if (newLangToggle) {
+            newLangToggle.addEventListener('click', () => {
+                const currentLang = newLangToggle.dataset.current;
+                const newLang = currentLang === 'hr' ? 'en' : 'hr';
+                switchLanguage(newLang);
             });
-        });
+        }
     }
 
     navLinks.classList.toggle('active');

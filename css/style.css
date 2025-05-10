@@ -4,6 +4,7 @@
     --primary-dark: #d89400;
     --primary-light: #ffb733;
     --text-color: #333;
+    --text-secondary: #666;
     --bg-color: #fff;
     --accent-color: #2c3e50;
     --transition: all 0.3s ease;
@@ -328,9 +329,28 @@ body {
     transform-origin: left;
 }
 
+/* Sections */
+section {
+    padding: 1.5rem 0;
+    margin: 1.5rem 0;
+}
+
+.hero {
+    padding: 4rem 0; /* Keep hero section with original padding */
+    margin: 0;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 /* Services Preview */
 .services-preview {
-    padding: 0.5rem 1rem 0 1rem;
     background: transparent;
 }
 
@@ -349,8 +369,21 @@ body {
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: var(--accent-color);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 3px;
 }
 
 .service-card {
@@ -786,7 +819,7 @@ body {
 }
 
 .contact-logo {
-    width: 250px; /* Increased by 50% from 120px */
+    width: 300px; /* Increased by 50% from 120px */
     height: auto;
     margin-bottom: 1.5rem;
 }

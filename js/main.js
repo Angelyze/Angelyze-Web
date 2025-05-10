@@ -88,13 +88,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
+// Initialize the large header on page load
+// This will be applied immediately when the script runs
+navbar.classList.add('large-header');
+
+// Remove the large header class after a delay
+setTimeout(() => {
+    navbar.classList.remove('large-header');
+}, 1500);
+
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 50) {
         navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.5)';
+        navbar.classList.remove('large-header');
     } else {
         navbar.style.boxShadow = 'none';
+        if (currentScroll === 0 && !navbar.classList.contains('large-header') && document.body.scrollTop === 0) {
+            navbar.classList.add('large-header');
+            setTimeout(() => {
+                navbar.classList.remove('large-header');
+            }, 1500);
+        }
     }
 
     lastScroll = currentScroll;

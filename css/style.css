@@ -46,6 +46,11 @@ body {
     z-index: 100;
     display: flex;
     gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.large-header .language-switcher {
+    right: 1.5rem;
 }
 
 .lang-toggle {
@@ -61,6 +66,11 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.large-header .lang-toggle {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
 .lang-toggle:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
@@ -73,11 +83,16 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     z-index: 100;
     box-shadow: none;
-    transition: box-shadow 0.3s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar.large-header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 0;
 }
 
 .nav-container {
@@ -88,6 +103,11 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: all 0.5s ease;
+}
+
+.large-header .nav-container {
+    padding: 1.5rem 1rem;
 }
 
 .logo {
@@ -96,11 +116,16 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 .logo img {
     height: 70px;
     transition: var(--transition);
+}
+
+.large-header .logo img {
+    height: 90px;
 }
 
 .logo img:hover {
@@ -116,6 +141,11 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.large-header .logo-text {
+    font-size: 2.3rem;
 }
 
 .nav-links {
@@ -123,6 +153,11 @@ body {
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease;
+}
+
+.large-header .nav-links {
+    gap: 2.5rem;
 }
 
 .nav-link {
@@ -131,6 +166,12 @@ body {
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
+    transition: all 0.5s ease;
+}
+
+.large-header .nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .nav-link::after {
@@ -153,6 +194,11 @@ body {
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.large-header .mobile-menu-btn {
+    gap: 8px;
 }
 
 .mobile-menu-btn span {
@@ -160,6 +206,11 @@ body {
     height: 2px;
     background: var(--text-color);
     transition: var(--transition);
+}
+
+.large-header .mobile-menu-btn span {
+    width: 35px;
+    height: 3px;
 }
 
 /* Back to Top Button */
@@ -728,10 +779,19 @@ section {
         height: 60px;
     }
 
+    .large-header .nav-container {
+        height: 80px;
+        padding: 0.5rem 1rem;
+    }
+
     .logo {
         position: static;
         display: flex;
         align-items: center;
+    }
+
+    .large-header .logo img {
+        height: 70px;
     }
 
     .language-switcher {
@@ -779,6 +839,10 @@ section {
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
         z-index: 99;
         padding: 1rem;
+    }
+
+    .large-header .nav-links.active {
+        top: 80px;
     }
 
     .nav-links.active .mobile-language-switcher {

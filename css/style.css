@@ -120,22 +120,17 @@ body {
     transition: all 0.5s ease;
 }
 
-.logo:hover img,
-.logo:hover .logo-text {
-    transform: scale(1.05);
-}
-
 .logo img {
     height: 70px;
     transition: var(--transition);
 }
 
 .large-header .logo img {
-    height: 80px; /* Reduced from 90px to 80px */
+    height: 80px;
 }
 
 .logo-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-left: 0.5rem;
     background: linear-gradient(to right, #000000, #f4b900);
@@ -144,10 +139,12 @@ body {
     -webkit-text-fill-color: transparent;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .large-header .logo-text {
-    font-size: 2.1rem; /* Reduced from 2.3rem to 2.1rem */
+    font-size: 1.9rem;
 }
 
 .nav-links {
@@ -157,12 +154,12 @@ body {
     align-items: center;
     transition: all 0.5s ease;
     margin: 0 auto;
-    padding-left: 2rem; /* Add padding to offset the logo */
+    padding-left: 5rem; /* Increased padding to align with the end of ANGELYZE */
 }
 
 .large-header .nav-links {
     gap: 2.2rem;
-    padding-left: 3rem; /* Increase padding in large header state */
+    padding-left: 6.5rem; /* Increased padding in large header state */
 }
 
 .nav-link {
@@ -338,9 +335,11 @@ body {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 40px rgb(255, 255, 255), 2px 2px 40px rgb(255, 255, 255);
-    margin-top: 3rem; /* Increased from 2rem to 3rem */
+    margin-top: 3rem;
     color: #b51c1f;
     -webkit-text-stroke: 2px #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .hero-subtitle {

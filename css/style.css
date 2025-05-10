@@ -273,20 +273,9 @@ body {
 
 .hero-subtitle {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1);
     color: #ffffff;
-}
-
-.hero-description {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
-    color: #ffffff;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
 }
 
 .hero .cta-button {
@@ -348,10 +337,24 @@ section {
 
 /* FAQ Section */
 .faq-section {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 2rem 0;
     margin: 3rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section .section-title {
+    color: var(--accent-color);
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.faq-section .section-description {
+    color: var(--text-color);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .faq-container {
@@ -360,17 +363,21 @@ section {
 }
 
 .faq-item {
-    background: white;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .faq-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .faq-question {
@@ -380,6 +387,8 @@ section {
     position: relative;
     cursor: pointer;
     padding-right: 30px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .faq-question::after {
@@ -389,17 +398,31 @@ section {
     top: 0;
     font-size: 1.5rem;
     color: var(--primary-color);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .faq-question.active::after {
     content: '−';
     color: var(--primary-dark);
+    background: rgba(255, 255, 255, 0.8);
+    transform: rotate(180deg);
 }
 
 .faq-answer {
     color: var(--text-color);
     line-height: 1.6;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
 .hero {

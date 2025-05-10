@@ -273,9 +273,20 @@ body {
 
 .hero-subtitle {
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1);
     color: #ffffff;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    color: #ffffff;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 .hero .cta-button {
@@ -333,6 +344,62 @@ body {
 section {
     padding: 1.5rem 0;
     margin: 1.5rem 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 2rem 0;
+    margin: 3rem 0;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    position: relative;
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    content: '−';
+    color: var(--primary-dark);
+}
+
+.faq-answer {
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 .hero {

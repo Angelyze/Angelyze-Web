@@ -1,45 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Croatian (Default) Pages -->
   <url>
     <loc>https://angelyze.org/</loc>
-    <lastmod>2025-04-05</lastmod>
+    <lastmod>2025-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://angelyze.org/"/>
   </url>
   <url>
     <loc>https://angelyze.org/o-nama.html</loc>
-    <lastmod>2025-04-05</lastmod>
+    <lastmod>2025-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/o-nama.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/about-us.html"/>
   </url>
   <url>
     <loc>https://angelyze.org/proizvodi-i-usluge.html</loc>
-    <lastmod>2025-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/proizvodi-i-usluge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/products-and-services.html"/>
   </url>
   <url>
     <loc>https://angelyze.org/web-shop.html</loc>
-    <lastmod>2025-04-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/web-shop.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/web-shop.html"/>
   </url>
   <url>
     <loc>https://angelyze.org/etsy-shop.html</loc>
-    <lastmod>2025-04-05</lastmod>
+    <lastmod>2025-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/etsy-shop.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/etsy-shop.html"/>
   </url>
   <url>
     <loc>https://angelyze.org/uvjeti-koristenja.html</loc>
-    <lastmod>2025-04-05</lastmod>
+    <lastmod>2025-05-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/uvjeti-koristenja.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/terms-of-use.html"/>
   </url>
   <url>
     <loc>https://angelyze.org/zamjena-i-povrati.html</loc>
-    <lastmod>2025-04-05</lastmod>
+    <lastmod>2025-05-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/zamjena-i-povrati.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/returns-and-refunds.html"/>
   </url>
-</urlset> 
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://angelyze.org/en/</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://angelyze.org/"/>
+  </url>
+  <url>
+    <loc>https://angelyze.org/en/about-us.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/about-us.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/o-nama.html"/>
+  </url>
+  <url>
+    <loc>https://angelyze.org/en/products-and-services.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/products-and-services.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/proizvodi-i-usluge.html"/>
+  </url>
+  <url>
+    <loc>https://angelyze.org/en/web-shop.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/web-shop.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/web-shop.html"/>
+  </url>
+  <url>
+    <loc>https://angelyze.org/en/etsy-shop.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/etsy-shop.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/etsy-shop.html"/>
+  </url>
+  <url>
+    <loc>https://angelyze.org/en/terms-of-use.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/terms-of-use.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/uvjeti-koristenja.html"/>
+  </url>
+  <url>
+    <loc>https://angelyze.org/en/returns-and-refunds.html</loc>
+    <lastmod>2025-05-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelyze.org/en/returns-and-refunds.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://angelyze.org/zamjena-i-povrati.html"/>
+  </url>
+</urlset>

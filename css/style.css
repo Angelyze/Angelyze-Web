@@ -50,7 +50,7 @@ body {
 }
 
 .large-header .language-switcher {
-    right: 1.5rem;
+    right: 1.2rem;
 }
 
 .lang-toggle {
@@ -67,8 +67,8 @@ body {
 }
 
 .large-header .lang-toggle {
-    padding: 10px 20px;
-    font-size: 1.1rem;
+    padding: 9px 18px; /* Reduced from 10px 20px to 9px 18px */
+    font-size: 1.05rem; /* Reduced from 1.1rem to 1.05rem */
 }
 
 .lang-toggle:hover {
@@ -107,7 +107,7 @@ body {
 }
 
 .large-header .nav-container {
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 1rem;
 }
 
 .logo {
@@ -125,7 +125,7 @@ body {
 }
 
 .large-header .logo img {
-    height: 90px;
+    height: 80px; /* Reduced from 90px to 80px */
 }
 
 .logo img:hover {
@@ -144,8 +144,12 @@ body {
     transition: all 0.5s ease;
 }
 
+.logo-text:hover {
+    transform: scale(1.05); /* Same hover effect as logo image */
+}
+
 .large-header .logo-text {
-    font-size: 2.3rem;
+    font-size: 2.1rem; /* Reduced from 2.3rem to 2.1rem */
 }
 
 .nav-links {
@@ -154,10 +158,11 @@ body {
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
+    margin-right: 0;
 }
 
 .large-header .nav-links {
-    gap: 2.5rem;
+    gap: 2.2rem; /* Reduced from 2.5rem to 2.2rem */
 }
 
 .nav-link {
@@ -170,7 +175,7 @@ body {
 }
 
 .large-header .nav-link {
-    font-size: 1.1rem;
+    font-size: 1.05rem; /* Reduced from 1.1rem to 1.05rem */
     font-weight: 600;
 }
 

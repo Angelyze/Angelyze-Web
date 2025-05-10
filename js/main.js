@@ -92,11 +92,6 @@ let lastScroll = 0;
 // This will be applied immediately when the script runs
 navbar.classList.add('large-header');
 
-// Remove the large header class after a delay
-setTimeout(() => {
-    navbar.classList.remove('large-header');
-}, 1500);
-
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
@@ -105,11 +100,8 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('large-header');
     } else {
         navbar.style.boxShadow = 'none';
-        if (currentScroll === 0 && !navbar.classList.contains('large-header') && document.body.scrollTop === 0) {
+        if (currentScroll === 0) {
             navbar.classList.add('large-header');
-            setTimeout(() => {
-                navbar.classList.remove('large-header');
-            }, 1500);
         }
     }
 

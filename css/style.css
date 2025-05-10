@@ -130,7 +130,7 @@ body {
 }
 
 .logo-text {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-left: 0.5rem;
     background: linear-gradient(to right, #000000, #f4b900);
@@ -154,14 +154,14 @@ body {
     align-items: center;
     transition: all 0.5s ease;
     margin: 0 auto;
-    padding-left: 8rem; /* Further increased padding to align with the end of larger ANGELYZE */
+    padding-left: 9rem; /* Further increased padding to align with the end of larger ANGELYZE */
     padding-right: 1rem; /* Added right padding to balance with language icon */
 }
 
 .large-header .nav-links {
     gap: 2.2rem;
-    padding-left: 9rem; /* Increased padding in large header state */
-    padding-right: 1.2rem; /* Added right padding in large header state */
+    padding-left: 10rem; /* Increased padding in large header state */
+    padding-right: 1rem; /* Added right padding in large header state */
 }
 
 .nav-link {

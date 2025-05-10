@@ -685,7 +685,7 @@ body {
 }
 
 .about-content {
-    max-width: 1000px;
+    max-width: 1200px; /* Changed from 1000px to match container max-width */
     margin: 0 auto;
 }
 
@@ -786,7 +786,7 @@ body {
 }
 
 .contact-logo {
-    width: 120px;
+    width: 180px; /* Increased by 50% from 120px */
     height: auto;
     margin-bottom: 1.5rem;
 }
@@ -832,8 +832,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 60px; /* Increased by 50% from 40px */
+    height: 60px; /* Increased by 50% from 40px */
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     transition: var(--transition);
@@ -845,8 +845,8 @@ body {
 }
 
 .social-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px; /* Increased by 50% from 20px */
+    height: 30px; /* Increased by 50% from 20px */
     object-fit: contain;
 }
 
